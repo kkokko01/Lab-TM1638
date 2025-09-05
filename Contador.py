@@ -1,5 +1,4 @@
-# Contador en TM1638 que al llegar a 0 pasa a 99999999, sin antirrebote
-
+# Contador en TM1638 
 from TM1638 import TM1638
 import machine
 import time
@@ -26,4 +25,5 @@ while True:
     if contador < 0:
         contador = MAX_NUM
     elif contador > MAX_NUM:
+
         contador = 0
