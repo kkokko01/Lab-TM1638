@@ -40,7 +40,6 @@ def juego():
         ronda_actual += 1
         time.sleep(0.5)
 
-    # Visualización dinámica de resultados con scroll
     texto_score = f"SCORE {aciertos}   "
     texto_error = f"ERROR {errores}   "
     promedio = sum(tiempos) // len(tiempos) if tiempos else 0
@@ -60,4 +59,5 @@ while True:
         if keys & 0x80:  # Último botón (botón 8)
             break
         time.sleep(0.1)
+
     tm.number(0)
